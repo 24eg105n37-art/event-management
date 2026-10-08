@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Organizer Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Event Management</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="organizer-dashboard.html">Dashboard</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="register-section">
+
+    <div class="register-box">
+
+        <h1>Create Event</h1>
+
+        <p>Add a new event</p>
+
+        <form id="eventForm">
+
+            <input type="text" id="title" placeholder="Event Title" required>
+
+            <input type="text" id="description" placeholder="Event Description" required>
+
+            <input type="date" id="date" required>
+
+            <input type="time" id="time" required>
+
+            <input type="text" id="venue" placeholder="Venue" required>
+
+            <input type="number" id="capacity" placeholder="Capacity" required>
+
+            <button type="submit" class="btn">Create Event</button>
+
+        </form>
+
+    </div>
+<div id="organizer-events"></div>
+</section>
+
+<footer>
+    <p>© 2026 Event Management System</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
