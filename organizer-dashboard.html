@@ -32,24 +32,42 @@
 
         <form id="eventForm">
 
-            <input type="text" id="title" placeholder="Event Title" required>
+            <input type="text" id="title"
+                   placeholder="Event Title" required>
 
-            <input type="text" id="description" placeholder="Event Description" required>
+            <input type="text" id="description"
+                   placeholder="Event Description" required>
 
             <input type="date" id="date" required>
 
             <input type="time" id="time" required>
 
-            <input type="text" id="venue" placeholder="Venue" required>
+            <input type="text" id="venue"
+                   placeholder="Venue" required>
 
-            <input type="number" id="capacity" placeholder="Capacity" required>
+            <input type="number" id="capacity"
+                   placeholder="Capacity" required>
 
-            <button type="submit" class="btn">Create Event</button>
+            <button type="submit" class="btn">
+                Create Event
+            </button>
 
         </form>
 
     </div>
-<div id="organizer-events"></div>
+
+    <div id="organizer-events"></div>
+
+    <div id="participants-section">
+
+        <h2>Event Participants</h2>
+
+        <div id="participants-container">
+            <p>Select an event to view its participants.</p>
+        </div>
+
+    </div>
+
 </section>
 
 <footer>
