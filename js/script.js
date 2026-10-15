@@ -146,30 +146,21 @@ if (registerForm) {
             body: JSON.stringify(user)
 
         })
-            .then(response => {
-
+            .then(async response => {
                 if (!response.ok) {
-                    throw new Error("Registration failed");
+                    const errorMsg = await response.text();
+                    throw new Error(errorMsg || "Registration failed");
                 }
-
                 return response.json();
-
             })
             .then(data => {
-
-                alert("Account created successfully!");
-
+                alert("Account created successfully! Please log in.");
                 registerForm.reset();
-
-                console.log(data);
-
+                window.location.href = "login.html";
             })
             .catch(error => {
-
-                alert("Registration failed!");
-
+                alert(error.message || "Registration failed!");
                 console.error("Registration error:", error);
-
             });
     });
 }
